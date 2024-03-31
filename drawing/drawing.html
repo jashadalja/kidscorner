@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>kids Corner Art Gallary</title>
+  <link rel="icon" href="../images/weblogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="drawingstyle.css">
+
+</head>
+
+<body>
+
+  <body id="body" onload="bgclr()">
+    <img src="doc/pencils1.png" style="position: fixed;
+  right: -80px;
+  top: -5%;
+  width: auto;
+  height: auto;">
+    <img src="doc/pencils.png" style="position: fixed;
+  left: -80px;
+  top: -5%;
+  width: auto;
+  height: auto;">
+    <div style="position: absolute;
+			left: 15%;
+      top: -35px;
+			margin-left: 10px;
+			color: white;
+			font-size: 40px;
+			cursor: pointer;" onclick="back()">&#129136</div><br>
+    <canvas width="800" height="500" id="canvasD"></canvas>
+    <div class="controls">
+      <ul>
+        <li class="white"></li>
+        <li class="red selected"></li>
+        <li class="blue"></li>
+        <li class="yellow"></li>
+      </ul>
+      <button id="revealColorSelect">New Color</button>
+      <div id="colorSelect">
+        <span id="newColor"></span>
+        <div class="sliders">
+          <p>
+            <label for="red">Red</label>
+            <input id="red" name="red" type="range" min=0 max=255 value=0>
+          </p>
+          <p>
+            <label for="green">Green</label>
+            <input id="green" name="green" type="range" min=0 max=255 value=0>
+          </p>
+          <p>
+            <label for="blue">Blue</label>
+            <input id="blue" name="blue" type="range" min=0 max=255 value=0>
+          </p>
+        </div>
+        <div>
+          <button id="addNewColor">Add Color</button>
+        </div>
+      </div>
+      <center>
+        <table>
+          <tr>
+            <td>
+              <input type="button" onclick="redraw()" value="Clear" id="clearbtn">
+            </td>
+            <td>
+              <input type="range" min="1" max="7" value="2" onchange="func()" id="pensize">
+            </td>
+            <td>
+              <p id="pensizenum" style="color: white;"></p>
+            </td>
+            <td>
+              <input type="button" onclick="downl()" value="Download image" id="clearbtn">
+            </td>
+            <td>
+          </tr>
+        </table>
+      </center>
+    </div>
+  </body>
+  <!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="drawingscript.js"></script>
+  <script>
+    document.getElementById("pensizenum").innerHTML = 2;
+    function downl() {
+      var canv = document.getElementById("canvasD");
+      image = canv.toDataURL("image/jpeg", 1.0)
+      var link = document.createElement('a');
+      link.download = "my-image.jpg";
+      link.href = image;
+      link.click();
+    }
+    function back() {
+      window.history.back();
+    }
+    function bgclr() {
+      document.getElementById("body").style.background = "#006699";
+    }
+
+  </script>
+</body>
+
+</html>
