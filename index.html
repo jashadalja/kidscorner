@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Corner Games | Stories | learn</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom website logo  -->
+    <link rel="icon" type="image/x-icon" href="images/weblogo.png">
+    <!-- link for email js -->
+    <script src="script/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("36F2-Itfl2Odc8jaW");
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><img style="height: 7vh; width: 7vh; margin-top: vh;" src="images/weblogo.png"
+                alt=""></a>
+
+        <div id="menu-bars" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#animals">animals</a>
+            <a href="#stories">stories</a>
+            <a href="#games">games</a>
+            <a href="#movies">movies</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home background" id="home">
+
+        <div class="content">
+            <h1>welcome to kid's Corner</h1>
+            <h3>making education more fun.</h3>
+            <p>Welcome to Kids Corner, where learning meets fun! Our website is dedicated to providing an enriching
+                educational experience for children, blending essential learning concepts with engaging and entertaining
+                activities. From interactive games to captivating lessons, we strive to make learning a delightful
+                adventure for young minds.</p>
+            <button onclick="sendMailAndRedirect();" class="btn">Let's Art</button>
+        </div>
+
+        <div class="image">
+            <img id="elephent" src="images/home-img.png" alt="" onmouseleave="animateElephenet()"
+                onmouseenter="playSound()">
+            <audio id="elephant-sound" src="audio/elephent.mp3"></audio>
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- animals section starts  -->
+    <section class="animals up-and-down" id="animals">
+
+        <div class="box-container">
+            <h3 class="title">Water creatures</h3>
+            <div class="image-wrapper">
+                <div class="full-landing-image">
+                    <a href="videos/tortoise.html" target="_blank">
+                        <div class="box">
+                            <img src="images/tortoise1.webp" alt="">
+                            <div class="info">
+                                <h1 style="font-weight: 900; color: white;">tortoise</h1>
+                                <pre>
+Tortoises are slow but steady reptiles with hard shells that
+they carry on their backs,
+making them unique and fascinating creatures.</pre>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="videos/fish.html" target="_blank">
+                        <div class="box">
+                            <img src="images/fish.webp" alt="">
+                            <div class="info">
+                                <h1 style="font-weight: 900; color: white;">Fish</h1>
+                                <pre>
+Fish are amazing creatures that live underwater and come in many shapes,
+ sizes, and colors, making the ocean a vibrant and lively place!.</pre>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="videos/frog.html" target="_blank">
+                        <div class="box">
+                            <img src="images/frog1.png" alt="">
+                            <div class="info">
+                                <h1 style="font-weight: 900; color:white;">frog</h1>
+                                <pre>
+Frogs hop and croak, leaping from lily pad to lily pad,
+ exploring the marshy world around them leaping from lily pad to lily  with curious eyes.....</pre>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <img class="stick" src="images/stick.png" alt="">
+
+        <div class="box-container">
+
+            <h1 class="title">Land creatures</h1>
+            <div class="image-wrapper">
+                <a href="videos/lion.html" target="_blank">
+                    <div class="box">
+                        <img src="images/lion1.png" alt="">
+                        <div class="info">
+                            <h1 style="font-weight: 900;">Lion</h1>
+                            <pre class="pre1">
+Lions are majestic animals with golden fur, powerful roars, 
+and they rule over the African savannah.</pre>
+                        </div>
+                    </div>
+                </a>
+                <a href="videos/cow.html" target="_blank">
+                    <div class="box">
+
+                        <img src="images/cow1.png" alt="">
+                        <div class="info">
+                            <h1 style="font-weight: 900;">Cow</h1>
+                            <pre class="pre1">
+Cows are friendly animals with big, round eyes,
+who give us milk and love to munch on grass.</pre>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="videos/horse.html" target="_blank">
+                    <div class="box">
+                        <img src="images/horse1.png" alt="">
+                        <div class="info">
+                            <h1 style="font-weight: 900;">Horse</h1>
+                            <pre class="pre1">
+Horses are beautiful animals with long flowing manes,
+strong legs, and they love to gallop and play.</pre>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- animals section ends -->
+
+    <!-- Stories section starts  -->
+
+    <section class="stories background" id="stories">
+
+        <h1 class="heading">amazing stories</h1>
+
+        <div class="box-container">
+            <a href="story/rabbit.html">
+                <div class="box">
+                    <img src="story/simages/1.png" alt="" class="storiesimg">
+                    <h3>Rabbit and Tortoise</h3>
+                    <span>Best </span>
+                    <p>In a race between a overconfident rabbit and intelligent Tortoise</p>
+                </div>
+            </a>
+            <a href="story/crow.html">
+                <div class="box">
+                    <img src="story/simages/s1.png" alt="" class="storiesimg">
+                    <h3>Thirsty Crow</h3>
+                    <span>Best </span>
+                    <p>intelligence and resourcefulness of crow overcome challenges</p>
+                </div>
+            </a>
+            <a href="story/mouse.html">
+                <div class="box">
+                    <img src="story/simages/l10.png" alt="" class="storiesimg">
+                    <h3>Mouse and Lion</h3>
+                    <span>Best </span>
+                    <p>intelligence and resourcefulness of crow overcome challenges </p>
+                </div>
+            </a>
+            <a href="story/fox.html">
+                <div class="box">
+                    <img src="story/simages/f1.png" alt="" class="storiesimg">
+                    <h3>The fox and Grapes</h3>
+                    <span>Best </span>
+                    <p>In a race between a overconfident rabbit and intelligent Tortoise</p>
+                </div>
+            </a>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- teacher section ends -->
+
+    <!-- games section starts  -->
+
+    <section class="games up-and-down" id="games">
+
+        <h1 class="heading"> Games </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <button onclick="sendMailAndRedirectGame1()">
+                    <img src="images/game1.png" alt="">
+                    <div class="info">
+                        <h3>Addition and Subtraction</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="box">
+                <button onclick="sendMailAndRedirectGame2()">
+                    <img src="images/game2.png" alt="">
+                    <div class="info">
+                        <h3>What is noun</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="box">
+                <button
+                    onclick="sendMailAndRedirectGame3()"><!-- "https://www.starfall.com/h/geometry/match-clocks/?mg=k"> -->
+                    <img src="images/game3.png" alt="">
+                    <div class="info">
+                        <h3>Clock Timings</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="box">
+                <button
+                    onclick="sendMailAndRedirectGame4()"><!-- "https://www.starfall.com/h/geometry/puzzles-easy/?mg=k"> -->
+                    <img src="images/game4.png" alt="">
+                    <div class="info">
+                        <h3>puzzels</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="box">
+                <button
+                    onclick="sendMailAndRedirectGame5()"><!-- "https://www.starfall.com/h/addsub/monkey-mash/?sn=math2"> -->
+                    <img src="images/game5.png" alt="">
+                    <div class="info">
+                        <h3>Monkey Mash</h3>
+                    </div>
+                </button>
+            </div>
+            <div class="box">
+                <button onclick="sendMailAndRedirectGame6()">
+                    <img src="images/game6.png" alt="">
+                    <div class="info">
+                        <h3>Matching the cards</h3>
+                    </div>
+                </button>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- games section ends -->
+
+
+    <!-- movies section starts  -->
+
+    <section class="movies up-and-down" id="movies">
+
+        <h1 class="heading">Movies</h1>
+
+        <div class="box-container">
+
+            <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+
+                <div class="movie">
+                    <img src="images/movie1.png" style="height:30vh; width: 22vw;" alt="">Bal Ganesh
+                </div>
+                <a href="videos/movie1.html" class="btn">Watch Now</a>
+            </div>
+
+            <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+                <span class="choise">best</span>
+                <div class="movie">
+                    <img src="images/movie2.png" style="height:30vh; width: 20vw;" alt="">Return of Hanuman
+                </div>
+                <a href="videos/movie1.html" class="btn">Watch Now</a>
+            </div>
+
+            <div class="box" style="background: url(images/card-bg1.png) no-repeat;">
+
+                <div class="movie">
+                    <img src="images/movie3.png" style="height:30vh; width: 20vw;" alt="">Little Krishna
+                </div>
+                <a href="videos/movie1.html" class="btn">Watch Now</a>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+    <!-- movies section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact background" id="contact">
+
+        <div class="row">
+
+            <div class="contact-info">
+
+                <div class="box">
+                    <h3 class="title">contact details</h3>
+                    <p> <i class="fas fa-map-marker-alt"></i> Ahmedabad, india - 380015. </p>
+                    <p> <i class="fas fa-envelope"></i> jashadalja12@gmail.com </p>
+                    <p> <i class="fas fa-phone"></i> +91 9106381073 </p>
+                </div>
+
+                <div class="box">
+                    <h3 class="title">follow us</h3>
+                    <a href="https://www.instagram.com/______jash______/" class="fab fa-instagram"></a>
+                    <a href="https://in.linkedin.com/in/jash-adalja-445472270" class="fab fa-linkedin"></a>
+                </div>
+
+
+            </div>
+
+            <form action="" class="contact-form">
+
+                <h3>contact us</h3>
+
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="number" class="box">
+                <textarea placeholder="message" class="box message" name="" id="" cols="30" rows="10"></textarea>
+
+                <a href="mailto:jashadalja12@gmail.com" class="btn">send message</a>
+            </form>
+
+        </div>
+
+        <div class="image">
+            <img src="images/contact-img.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section  -->
+
+    <div class="footer">
+        created by <span> Jash Adalja </span> | @all rights reserved!
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- jQuery Ripples JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.ripples/0.5.3/jquery.ripples.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".full-landing-image").ripples({
+                resolution: 200,
+                perturbance: 0.09,
+            });
+        });
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.addEventListener('click', () => {
+            menu.classList.toggle('fa-times');
+            navbar.classList.toggle('nav-toggle');
+        });
+
+        window.onscroll = () => {
+            menu.classList.remove('fa-times');
+            navbar.classList.remove('nav-toggle');
+        }
+        function animateElephenet() {
+            var sam = document.getElementById('elephent');
+            sam.classList.add('wave-animation');
+            setTimeout(function () {
+                sam.classList.remove('wave-animation');
+            }, 500); // Duration of the animation
+        }
+
+        function playSound() {
+            var sound = document.getElementById('elephant-sound');
+            sound.play();
+        }
+
+        document.getElementById('elephant').addEventListener('mouseenter', function () {
+            playSound();
+        });
+    </script>
+    <script>  function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth' // Smooth scrolling animation
+            });
+        }
+
+        // Function to show/hide the button based on scroll position
+        window.addEventListener('scroll', function () {
+            console.log('Scrolling detected');
+            var scrollToTopBtn = document.getElementById('scrollToTopBtn');
+            if (window.scrollY > 900) {
+                scrollToTopBtn.style.display = 'block';
+            } else {
+                scrollToTopBtn.style.display = 'none';
+            }
+        });
+    </script>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><i
+            class="fa fa-solid fa-arrow-up"></i></button>
+
+</body>
+
+</html>
