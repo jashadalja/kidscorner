@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>The Fox and Grapes</title>
+    <style type="text/css">
+        body {
+            overflow: hidden;
+            background: url('/main/images/background.png');
+            background-size: 100% 100%;
+        }
+
+        #album {
+
+            width: 100%;
+            height: 80vh;
+            margin: 5% auto;
+        }
+
+        @media only screen and (max-width: 768px) {
+            body {
+                height: 90vh;
+                width: 100%;
+            }
+
+            #album {
+                height: 100vh;
+                width: 100vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: absolute;
+	left: 3vw;
+top: 1vh;
+	margin-left: 10px;
+	color: rgb(190, 115, 115);
+	font-size: 40px;
+	cursor: pointer;" onclick="back()">&#129136</div>
+	
+    <div id="album">
+        <div style="background: url('simages/f1.png'); background-size: 100% 100%;"></div>
+        <div style="background: url('simages/f2.png'); background-size: 100% 100%"></div>
+        <div style="background: url('simages/f3.png'); background-size: 100% 100%"></div>
+        <div style="background: url('simages/f4.png'); background-size: 100% 100%"></div>
+        <div style="background: url('simages/f5.png'); background-size: 100% 100%"></div>
+        <div style="background: url('simages/f6.png'); background-size: 100% 100%"></div>
+        <div style="background: url('simages/f7.png'); background-size: 100% 100%"></div>
+        
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="turn.js"></script>
+    <script>
+        function back() {
+			window.history.back();
+		}
+        $('#album').turn({ gradients: true, acceleration: true });
+    </script>
+</body>
+
+</html>
