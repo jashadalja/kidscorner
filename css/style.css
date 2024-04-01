@@ -456,18 +456,22 @@ header .navbar a:hover {
   overflow: hidden;
 }
 
-.movies .box-container .box h3 {
-  font-size: 4rem;
-  color: #333;
-}
 
 .movies .box-container .box .movie {
   font-size: 3.9rem;
+  height: 40vh;
   color: var(--red);
 }
 
-.movies .box-container .box .movie span {
-  font-size: 2.5rem;
+.movies .box-container .box .movie img {
+  height: 35vh;
+  width: 35vh;
+}
+
+.movies .box-container .box .movie p {
+  font-size: 3rem;
+  color: var(--red);
+
 }
 
 .movies .box-container .box p {
